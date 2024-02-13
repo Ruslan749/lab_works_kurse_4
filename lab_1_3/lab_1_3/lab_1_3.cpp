@@ -2,16 +2,18 @@
 #include <iostream>
 
 void main(void) {
+	setlocale(LC_ALL, "RU"); // указания языка кодировки
+
 	int a = 2, b = 5;
 	void obmen1(int, int);
 	void obmen1(int*, int*);
 	void obmen1(int&, int&);
 
-	std::cout << "not obmen: a = " <<a<< " b = " <<b;
+	std::cout << "без обмена: a = " <<a<< " b = " <<b<<"\n";
 	// вызов obmen1;
-	std::cout << " obmen_1: a = " << a << " b = " << b;
+	std::cout << " oбмен 1: a = " << a << " b = " << b << "\n";
 	// вызов obmen2;
-	std::cout << " obmen_2: a = " << a << " b = " << b;
+	std::cout << " обмен 2: a = " << a << " b = " << b << "\n";
 	// вызов obmen3;
-	std::cout << " obmen_3: a = " << a << " b = " << b;
+	std::cout << " обмен 3: a = " << a << " b = " << b << "\n";
 }
